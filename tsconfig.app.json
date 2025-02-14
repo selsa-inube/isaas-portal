@@ -1,24 +1,51 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src"]
-}
+    "compilerOptions": {
+      "target": "ES2020",
+      "useDefineForClassFields": true,
+      "lib": ["ES2020", "DOM", "DOM.Iterable"],
+      "module": "ESNext",
+      "skipLibCheck": true,
+  
+      /* Bundler mode */
+      "moduleResolution": "bundler",
+      "allowImportingTsExtensions": true,
+      "allowSyntheticDefaultImports": true,
+      "allowJs": true,
+      "isolatedModules": true,
+      "moduleDetection": "force",
+      "noEmit": true,
+      "jsx": "react-jsx",
+  
+      /* Linting */
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noFallthroughCasesInSwitch": true,
+      "paths": {
+        "@design/*": ["./src/design/*"],
+        "@components/*": ["./src/components/*"],
+        "@services/*": ["./src/services/*"],
+        "@routes/*": ["./src/routes/*"],
+        "@utils/*": ["./src/utils/*"],
+        "@validations/*": ["./src/validations/*"],
+        "@assets/*": ["./src/assets/*"],
+        "@styles/*": ["./src/styles/*"],
+        "@content/*": ["./src/content/*"],
+        "@context/*": ["./src/context/*"],
+        "@config/*": ["./src/config/*"],
+        "@pages/*": ["./src/pages/*"],
+        "@hooks/*": ["./src/hooks/*"],
+        "@mocks/*": ["./src/mocks/*"],
+        "@ptypes/*": ["./src/types/*"],
+        "@api/*": ["./src/api/*"],
+        "@forms/*": ["./src/shared/forms/*"]
+      },
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "vite.config.d.ts",
+      "tsconfig.node.json",
+      "tsconfig.app.json"
+    ]
+  }
