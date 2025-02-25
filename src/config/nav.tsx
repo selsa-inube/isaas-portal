@@ -1,8 +1,14 @@
 import {
-  MdOutlineStart,
   MdVpnKey,
   MdOutlineSettings,
   MdLogout,
+  MdOutlineCategory,
+  MdApps,
+  MdOutlineAccountTree,
+  MdOutlineCorporateFare,
+  MdMiscellaneousServices,
+  MdOutlineEngineering,
+  MdOutlineEvent,
 } from "react-icons/md";
 
 import { INav } from "@pages/home/types";
@@ -38,16 +44,52 @@ const nav: INav = {
         name: "",
         links: {
           positions: {
-            id: "positions",
-            label: "Cargos",
-            icon: <MdOutlineStart />,
+            id: "SaasService",
+            label: "Servicio Saas",
+            icon: <MdOutlineSettings />,
             path: "/positions",
           },
-          rules: {
-            id: "rules",
-            label: "Reglas",
-            icon: <MdOutlineSettings />,
-            path: "/rules",
+          suites: {
+            id: "Suites",
+            label: "Suites",
+            icon: <MdOutlineCategory />,
+            path: "/positions",
+          },
+          apps: {
+            id: "Apps",
+            label: "Aplicaciones",
+            icon: <MdApps />,
+            path: "/positions",
+          },
+          entities: {
+            id: "Entities",
+            label: "Entidades",
+            icon: <MdOutlineCorporateFare />,
+            path: "/positions",
+          },
+          useCases: {
+            id: "UseCases",
+            label: "Casos de uso",
+            icon: <MdOutlineAccountTree />,
+            path: "/positions",
+          },
+          microservices: {
+            id: "Microservices",
+            label: "Microservicios",
+            icon: <MdMiscellaneousServices />,
+            path: "/positions",
+          },
+          processes: {
+            id: "Processes",
+            label: "Procesos",
+            icon: <MdOutlineEngineering />,
+            path: "/positions",
+          },
+          events: {
+            id: "Events",
+            label: "Eventos",
+            icon: <MdOutlineEvent />,
+            path: "/positions",
           },
         },
       },
