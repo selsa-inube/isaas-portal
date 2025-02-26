@@ -30,7 +30,7 @@ const SelectBusinessUnitsUI = ({
         >
           <Stack direction="column" alignItems="center">
             <Text as="h1" type="headline" size="large">
-              Bienvenido a iSetting Portal
+              Bienvenido a iSaas Portal
             </Text>
           </Stack>
           <StyledImage
