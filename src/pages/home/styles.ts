@@ -22,9 +22,8 @@ const StyledContainer = styled.div`
 const StyledContainerSection = styled.div<IStyledContainer>`
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding: ${basic.spacing.s200};
-  gap: ${basic.spacing.s300};
+  height: auto;
+  padding: ${basic.spacing.s500};
 `;
 
 const StyledHeaderContainer = styled.div`
@@ -51,21 +50,19 @@ const StyledTitle = styled.div<IStyledContainer>`
   padding: ${(props) =>
     props.$smallScreen
       ? ` ${(basic.spacing.s200, basic.spacing.s16)} `
-      : `${basic.spacing.s600} ${basic.spacing.s1600} ${basic.spacing.s1000} `};
+      : `${basic.spacing.s300} ${basic.spacing.s500} ${basic.spacing.s200} `};
 `;
 
 const StyledContainerCards = styled.div<IStyledContainer>`
   box-sizing: border-box;
-  padding: 170px;
   display: flex;
   flex-wrap: wrap;
-  gap: ${basic.spacing.s400};
-
+  gap: ${basic.spacing.s200};
   justify-content: ${(props) => props.$smallScreen && "center"};
   padding: ${(props) =>
     props.$smallScreen
       ? `${basic.spacing.s0}`
-      : `${basic.spacing.s0} ${basic.spacing.s1400} ${basic.spacing.s400}`};
+      : `${basic.spacing.s0} ${basic.spacing.s400} ${basic.spacing.s400}`};
 `;
 
 const StyledFooter = styled.footer`
