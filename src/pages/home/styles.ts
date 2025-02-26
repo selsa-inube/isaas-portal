@@ -22,7 +22,7 @@ const StyledContainer = styled.div`
 const StyledContainerSection = styled.div<IStyledContainer>`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   padding: ${basic.spacing.s500};
 `;
 
